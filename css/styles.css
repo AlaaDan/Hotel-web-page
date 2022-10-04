@@ -336,8 +336,6 @@ form input[type = submit]:hover{
     
 }
 
-
-
 @media screen and (min-width: 800px) {
     .header__toggle--lable{
         display: none;
