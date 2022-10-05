@@ -161,6 +161,7 @@ header{
 }
 /* slideshow end code */
 /* main ends here */
+/*footer starts here*/
 .footer{
     background-color: #007367;
     width: 100%;
@@ -204,7 +205,7 @@ header{
 .footer__aside--p{
     padding: 0;
 }
-
+/*footer starts here*/
 
 /* home page ends here */
 
