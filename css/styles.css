@@ -89,7 +89,7 @@ header{
     display: none;
     position: relative;
     top: 0;
-    left: 640px;
+    left: 85%;
 }
 .header_menu__list{
     list-style: none;
@@ -312,6 +312,7 @@ form input[type = submit]:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .room_card__img{
     background: url(/assets/photos/06-day.jpg) center/ cover no-repeat;
@@ -340,54 +341,13 @@ form input[type = submit]:hover{
     font-size: 1rem;
     border: none;
 }
-
-
-@media screen and (min-width: 800px) {
-    .room_card{
-        width: 40%;
-        height: 306px;
-    }
-    .card_container--content{
-        height: 800px;
-    }
-    .card_container{
-        display: grid;
-        grid-template-columns: 30% 30%;
-        justify-content: center; 
-    }
-    .card_container--img{
-        width: 100%;
-        height: 800px;
-    }
-    form{
-        margin: 120px auto;
-    }
-    .room_container{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    .room_card{
-        grid-auto-rows: 300px;
-    }
-    .room_card__img, .room_card__img2{
-        height: 300px;
-    }
-    .room_card__aside, .room_card__aside2{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .room_card__aside--h3, .room_card__aside--p{
-        font-size: 1.5rem;
-    }
-    .room_card__aside2--button{
-        width: 200px;
-        height: 60px;
-        border-radius: 50px;
-        font-size: 2rem;
-    }
+.room_card__aside2--span{
+    height: 15px;
+    width: 70px;
+    background-color: #eee;
+    text-align: center;
+    margin: 5px;
+    border-radius: 10px;   
 }
 
 /* Booking page ends here */
@@ -414,6 +374,7 @@ form input[type = submit]:hover{
     }
     
 }
+/* facilities page ends here */
 .grow { 
     transition: all .2s ease-in-out; 
     }
@@ -501,5 +462,55 @@ form input[type = submit]:hover{
     .aside{
         grid-column: 4/5;
         margin: 0 40%;  
+    }
+    /* Booking page desktrop*/
+    .room_card{
+        width: 40%;
+        height: 306px;
+    }
+    .card_container--content{
+        height: 800px;
+    }
+    .card_container{
+        display: grid;
+        grid-template-columns: 30% 30%;
+        justify-content: center; 
+    }
+    .card_container--img{
+        width: 100%;
+        height: 800px;
+    }
+    form{
+        margin: 120px auto;
+    }
+    .room_container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .room_card{
+        grid-auto-rows: 300px;
+    }
+    
+    .room_card__aside, .room_card__aside2{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .room_card__aside--h3, .room_card__aside--p{
+        font-size: 1.5rem;
+    }
+    .room_card__aside2--button{
+        width: 200px;
+        height: 60px;
+        border-radius: 50px;
+        font-size: 2rem;
+    }
+    .room_card__aside2--span{
+        font-size: 1.5rem;
+        width: 100px;
+        height: 30px;
+        border-radius: 30px;
     }
 }
