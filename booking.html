@@ -25,12 +25,14 @@
     </header>
     <section class="booking_banner">
         <h2 class="booking_banner--h2">Make a reservation</h2>
-        <aside class="card_container--img"></aside>
+        
 
         <aside class="card_container">
+            <aside class="card_container--img"></aside>
             <aside class="card_container--content">
-                <h3>Check in</h3>
+                
                 <form>
+                    <h3>Check in</h3>
                     <div class="form-row">
                         <select name="days">
                             <option value="day-select">Select Day</option>
@@ -145,6 +147,14 @@
                         <input type="text" placeholder="Children">
                     </div>
                     <div class="form-row">
+                        <select name="room">
+                            <option value="room-select">Select a room</option>
+                            <option value="Standard room">Standard room</option>
+                            <option value="king room">King room</option>
+                            <option value="searview room">Seaview room</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
                         <input class="grow" type="submit" value="Reserve Room">
                     </div>
                 </form>
@@ -152,6 +162,47 @@
         </aside>
 
     </section>
+    <h2 class="above_room_card-h2" >Other rooms</h2>
+
+    <div class="room_container">
+        <section class="room_card">
+            <div class="room_card__img"></div>
+            <aside class="room_card__aside">
+                <h3 class="room_card__aside--h3">Standard Double</h3>
+                <p class="room_card__aside--p">Our standard double rooms are spacious and cozy rooms with a king-size bed 
+                or two 90-beds put together. This room is suitable for couples as well as 
+                a group of friends as some of the rooms have connecting rooms. </p>
+            </aside>
+            <aside class="room_card__aside2">
+                <button class="room_card__aside2--button grow">Book me</button>
+            </aside>
+        </section>
     
+        <section class="room_card">
+            <div class="room_card__img2"></div>
+            <aside class="room_card__aside">
+                <h3 class="room_card__aside--h3">King size</h3>
+                <p class="room_card__aside--p">Our king rooms are spacious and cozy rooms with a king-size bed 
+                or two 90-beds put together. This room is suitable for couples as well as 
+                a group of friends as some of the rooms have connecting rooms. </p>
+            </aside>
+            <aside class="room_card__aside2">
+                <button class="room_card__aside2--button grow">Book me</button>
+            </aside>
+        </section>
+
+        <section class="room_card">
+            <div class="room_card__img3"></div>
+            <aside class="room_card__aside">
+                <h3 class="room_card__aside--h3">Seaview size</h3>
+                <p class="room_card__aside--p">Our Seaview rooms are spacious and cozy rooms with a king-size bed 
+                or two 90-beds put together. This room is suitable for couples as well as 
+                a group of friends as some of the rooms have connecting rooms. </p>
+            </aside>
+            <aside class="room_card__aside2">
+                <button class="room_card__aside2--button grow">Book me</button>
+            </aside>
+        </section>
+</div>
 </body>
 </html>
