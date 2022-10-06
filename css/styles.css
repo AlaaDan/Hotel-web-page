@@ -139,7 +139,6 @@ header{
     width: 100%;
     height: auto;
     background-color: #30353e; 
-    margin: 20px;
 }
 .main__container--photo{
     margin: 1rem;
@@ -503,14 +502,18 @@ form input[type = submit]:hover{
         font-size: 2rem;  
     }
 
-    .main__container--slider{
-        height: 1300px;
+    .main__container--slider, .faci_main__container--slider{
+        height: 1000px;
+        width: 90%;
+        margin: 10px auto;
     }
-    .faci_main__container--slider{
-       height: 1300px;
-    }
+   
     .main__container--photo{
         height: auto;
+    }
+    .main__container--article{
+        width: 90%;
+        margin: 10px auto;
     }
     
     article{
@@ -522,9 +525,8 @@ form input[type = submit]:hover{
         text-align: center;
     }
     .main__container__info{
-        width: 100%;
-        grid-column: 2/6;
-        grid-row: 4;
+        width: 90%;
+        margin: 10px auto;
         display: flex ;
         flex-direction: row;
         text-align: center;
