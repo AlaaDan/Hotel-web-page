@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
 *{
+    
     font-family: 'ZCOOL XiaoWei', serif;
     box-sizing: border-box;
     margin: 0;
@@ -31,6 +32,7 @@ p{
     padding: 20px;
     line-height: 35px; 
 }
+
 /* home page starts here */
 
 header{
@@ -87,6 +89,13 @@ header{
     top: 51px;
 }
 .header_menu{
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    right: 0;
+    width: 100%;
+}
+.header_menu{
     display: none;
     position: relative;
     top: 0;
@@ -130,6 +139,7 @@ header{
     width: 100%;
     height: auto;
     background-color: #30353e; 
+    margin: 20px;
 }
 .main__container--photo{
     margin: 1rem;
@@ -137,6 +147,7 @@ header{
     height: 450px;
     border-radius: 10px;
 }
+
 /* slideshow starting code */
 
 .main__container--slider{
@@ -166,11 +177,12 @@ header{
 .footer{
     background-color: #007367;
     width: 100%;
-    height: 200px;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 
 .scrollup{
@@ -190,21 +202,38 @@ header{
 }
 
 .footer__soical{
-    justify-content: space-between;
-    width: 50%;
-    margin: auto 50px; 
+    justify-content: space-between; 
+    margin: .5rem 0;
+    
 }
 .footer__menu{
     font-size: 1.5rem;
     color: white;
+    text-align: center;
+    margin: .5rem 0;
+
 }
 
-.aside{
-    width: 50%;
-    color: white;
-}
 .footer__aside--p{
+    margin: 1rem 0;
     padding: 0;
+}
+.footer__menu--emailbox{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    
+}
+.footer__menu--submit{
+    height: 28px;
+    border-radius:10px ;
+    width: 100px;
+    border-style: none;
+    margin: 1rem 0;
+    background-color:#30353e;
+    color: #eee;
+    font-size: 1.2rem;
 }
 /*footer starts here*/
 
@@ -280,7 +309,7 @@ form select, form input{
     border-bottom: 1px solid #eee;
 }
 
-form input[type = text], form input[type = number],form input::placeholder,select{
+form input[type = text], form input[type = date],form input::placeholder,select{
     color: white;
 }
 form input[type = submit]{
@@ -376,6 +405,59 @@ form input[type = submit]:hover{
     }
     
 }
+.faci_container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;    
+}
+.faci_main__container--section{
+    height: 304px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: white solid 1px;
+    border-bottom: none;
+    border-right: none;
+}
+.faci_photo{
+    height: 300px;
+    
+}
+.faci_main__container--section--aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;  
+}
+.faci_main__container--section--article{
+    font-size: 1.5rem;
+    color: #eee;
+}
+.faci_main__container--section--reverse{
+    height: 304px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    border: white solid 1px;
+    border-bottom: none;
+    border-left: none;  
+}
+
+@media screen and (max-width: 800px) {
+    .faci_main__container--section{
+        flex-direction: column;
+        height: auto;
+    }
+    .faci_main__container--section--reverse{
+        flex-direction: column;
+        height: auto;
+    }
+    
+}
 /* facilities page ends here */
 .grow { 
     transition: all .2s ease-in-out; 
@@ -397,12 +479,12 @@ form input[type = submit]:hover{
         display: none;
     }
     .header__logo{
-        grid-column: 2/3;
-        padding-left: 30px;
+        grid-column: 2;
+        padding-left: 0px;
     }
     .header_menu{
         all: unset;
-        grid-column: 5;
+        grid-column: 4/6;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -421,50 +503,51 @@ form input[type = submit]:hover{
         font-size: 2rem;  
     }
 
-    .main__container{
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-auto-rows: auto; 
-    }
     .main__container--slider{
-        grid-column: 2/6;
-        grid-row: 2;
-        height: 1200px;
-        background-position: 50% 50%;
+        height: 1300px;
     }
     .faci_main__container--slider{
-        grid-column: 2/6;
-        grid-row: 2;
-        height: 1100px;
-        background-position: 50% 50%;
+       height: 1300px;
     }
     .main__container--photo{
         height: auto;
-       
     }
     
     article{
         width: 100%;
         grid-column: 2/6;
-        grid-row: 3/5;
+        grid-row: 3;
         display: flex ;
         flex-direction: column;
         text-align: center;
     }
+    .main__container__info{
+        width: 100%;
+        grid-column: 2/6;
+        grid-row: 4;
+        display: flex ;
+        flex-direction: row;
+        text-align: center;
+  
+    }
+    .main__container__info--article{
+        border-right: #007367 solid 3px;
+        border-bottom: #007367 solid 3px;;
+    }
+    .main__container__info--article2{
+        border-right: #007367 solid 3px;
+         border-top: #007367 solid 3px;
+    }
+    .main__container__info--article3{
+        border-bottom: #007367 solid 3px;
+    }
 
     .footer{
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-auto-rows: auto; 
+        display: flex;
+        flex-direction: row;
+        height: 200px;
     }
-    .footer__soical{
-        grid-column: 3/4;
-        margin: 0 40%;
-    }
-    .aside{
-        grid-column: 4/5;
-        margin: 0 40%;  
-    }
+    
     /* Booking page desktrop*/
     .room_card{
         width: 40%;
@@ -516,3 +599,4 @@ form input[type = submit]:hover{
         border-radius: 30px;
     }
 }
+
