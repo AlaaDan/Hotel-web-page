@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
 *{
-    
     font-family: 'ZCOOL XiaoWei', serif;
     box-sizing: border-box;
     margin: 0;
@@ -210,7 +209,6 @@ header{
     color: white;
     text-align: center;
     margin: .5rem 0;
-
 }
 
 .footer__aside--p{
@@ -222,8 +220,7 @@ header{
     height: 30px;
     border-radius: 10px;
     font-size: 1.5rem;
-    border-style: none;
-    
+    border-style: none;   
 }
 .footer__menu--submit{
     height: 28px;
@@ -235,7 +232,7 @@ header{
     color: #eee;
     font-size: 1.2rem;
 }
-/*footer starts here*/
+/*footer ends here*/
 
 /* home page ends here */
 
@@ -446,6 +443,7 @@ form input[type = submit]:hover{
     border-bottom: none;
     border-left: none;  
 }
+/* Facilities Mobile version */
 
 @media screen and (max-width: 800px) {
     .faci_main__container--section{
@@ -461,7 +459,11 @@ form input[type = submit]:hover{
     }
     
 }
+/* Facilities Mobile version */
+
 /* facilities page ends here */
+
+/* animation */
 .grow { 
     transition: all .2s ease-in-out; 
     }
@@ -469,8 +471,13 @@ form input[type = submit]:hover{
 .grow:hover { 
     transform: scale(1.1); 
     }
+/* animation */
 
-@media screen and (min-width: 800px) {
+/* Desktop version */
+
+@media screen and (min-width: 800px) 
+/* Home page Desktop */
+{
     .header__toggle--lable{
         display: none;
     }
@@ -609,3 +616,4 @@ form input[type = submit]:hover{
     
 }
 
+/* Desktop version */
